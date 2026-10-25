@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotatkiMobilne.MainPage">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <Label Text="Moje notatki"
+               FontSize="28"
+               HorizontalOptions="Center" />
+
+        <HorizontalStackLayout Spacing="10">
+            <Entry x:Name="NowaNotatkaEntry"
+                   Placeholder="Nowy element"
+                   WidthRequest="250" />
+
+            <Button Text="DODAJ"
+                    BackgroundColor="Crimson"
+                    TextColor="White"
+                    Clicked="OnDodajClicked" />
+        </HorizontalStackLayout>
+
+        <ListView x:Name="NotatkiListView"
+                  SeparatorColor="Crimson" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
